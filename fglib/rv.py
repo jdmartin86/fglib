@@ -574,7 +574,7 @@ class Gaussian(RandomVariable):
         """Normalize probability density function."""
         return self
 
-    def marginalize(self, *dims):
+    def marginalize(self, *dims, normalize=None):
         """Return the marginal for given dimensions.
 
         The probability density function of the Gaussian random variable
